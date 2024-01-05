@@ -13,16 +13,18 @@ fetch("https://picsum.photos/v2/list")
 
       let productItem = document.createElement("div")
 
-      //author
-      let h2 = document.createElement("h2")
-      h2.textContent = productAuthor
-      productItem.appendChild(h2)
+      
 
       //img
       const productImg = document.createElement("img")
       productImg.setAttribute("src", productUrl)
       productImg.setAttribute("alt", productTitle)
       productItem.appendChild(productImg)
+
+      //author
+      let h2 = document.createElement("h2")
+      h2.textContent = productAuthor
+      productItem.appendChild(h2)
 
       // btn
       let seeMoreBtn = document.createElement("button")
